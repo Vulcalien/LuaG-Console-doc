@@ -1,17 +1,18 @@
-# LuaG Console (0.4.0) - Lua Script
-LuaG uses [lua](https://www.lua.org/) scripts.<br>
-All the script files must be put in the folder [`/console-userdata/script`](Files-and-Folders#console-userdata--folder) and there must be at least one file: `main.lua`.<br>
+# LuaG Console - Lua Script - 0.4.1
+
+LuaG uses [lua](https://www.lua.org/) scripts.  
+All the script files must be put in the folder [`/console-userdata/script`](Files-and-Folders#console-userdata--folder) and there must be at least one file: `main.lua`.  
 In your script files, you can use a set of **variables** and **functions** of the console library.
 
 ## main.lua
-This is *the main file* of the game.<br>
+This is *the main file* of the game.  
 It **must** contain 2 functions:
 - `init()` - that should be used to initialize variables and load other script files
 - `tick()` - that is called 60 times per second and should contain both ticking and rendering operations
 
 `init()` is called before the game starts, while `tick()` is called while the game is running.
 
-The simplest LuaG '*game*' is:<br>
+The simplest LuaG '*game*' is:  
 ```lua
 function init() end
 function tick() end
@@ -40,7 +41,7 @@ This will do nothing, but the console will run it without problems.
 ### loadscript(**script**)
 1. `script` ~ string - the path of the script to be loaded
 
-Calls lua's *dofile* for the given script.<br>
+Calls lua's *dofile* for the given script.  
 The script path is relative to the folder `console-userdata/script`.
 
 returns: `nil`
@@ -50,7 +51,7 @@ returns: `nil`
 ### key(**id**)
 1. id ~ int - the id of the key
 
-Keys are set in [`config.json`](Files-and-Folders#configjson--json-file).<br>
+Keys are set in [`config.json`](Files-and-Folders#configjson--json-file).  
 `id` represents the index in the keys array.
 
 returns: `true` if the key is pressed, else `false`
@@ -75,7 +76,7 @@ returns: `nil`
 ### settransparent(**color**)
 1. `color` ~ int - the color that will be ignored
 
-Sets the color to be ignored when drawing a sprite.<br>
+Sets the color to be ignored when drawing a sprite.  
 It is useful if you use a background color for sprites.
 
 returns: `nil`
