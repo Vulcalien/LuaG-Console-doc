@@ -1,9 +1,9 @@
-# LuaG Console - Files and Folders - 0.4.1
+# LuaG Console - Files and Folders - 0.5.0
 
 There are some files that the user must have to make the console work.
 
 ## console-userdata | (folder)
-This is the root folder for your game, and is located in *the same folder of the console .jar file*.  
+This is the root folder for your game, and is located in *the same folder of the .jar file*.  
 This folder contains a set of files and folders, that are necessary to make the console run without problems.  
 *All the files of your project are **inside** `console-userdata` and all the folders are **subfolders** of it*.
 ### A list of these files
@@ -16,8 +16,8 @@ This folder contains a set of files and folders, that are necessary to make the 
 | `map`         | binary file   |
 
 ## script | (folder)
-This is the folder where you will put all your code files.  
-You can also use subfolders to better organize your game files.  
+This is the folder where you will put all your scripts.  
+You can also use subfolders to organize better your game files.  
 
 The only file there **must** be is `main.lua`, that will be automatically called on console startup.
 
@@ -26,7 +26,7 @@ This folder contains your game sounds. *Sound files must be **'.wav' files***.
 `sfx` **cannot** contain subfolders at the moment.
 
 ## config.json | (json file)
-This file contains user informations.  
+This file contains user information.  
 It must contain a string array, 'keys'.  
 Example:
 ```json
@@ -37,7 +37,7 @@ Example:
 }
 ```
 
-The order of the keys gives them an **id**. In this case, [`key(1)`](Lua-Script#keyid) will refer to the key *A*.
+The order of the keys gives them an **id**. In this case, [`key(0)`](Lua-Script#keyid) will refer to the key *W*.
 
 ## atlas.png | (128x128 image)
 This png file is used as *sprite atlas* by the console.  

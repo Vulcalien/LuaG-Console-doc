@@ -1,4 +1,4 @@
-# LuaG Console - Lua Script - 0.4.1
+# LuaG Console - Lua Script - 0.5.0
 
 LuaG uses [lua](https://www.lua.org/) scripts.  
 All the script files must be put in the folder [`/console-userdata/script`](Files-and-Folders#console-userdata--folder) and there must be at least one file: `main.lua`.  
@@ -38,7 +38,7 @@ This will do nothing, but the console will run it without problems.
 
 ## General Functions
 
-### loadscript(**script**)
+### loadscript(script)
 1. `script` ~ string - the path of the script to be loaded
 
 Calls lua's *dofile* for the given script.  
@@ -46,19 +46,34 @@ The script path is relative to the folder `console-userdata/script`.
 
 returns: `nil`
 
-***
+## Keys Functions
 
-### key(**id**)
+### key(id)
 1. id ~ int - the id of the key
 
 Keys are set in [`config.json`](Files-and-Folders#configjson--json-file).  
+This can be written as `key_down`
 `id` represents the index in the keys array.
 
-returns: `true` if the key is pressed, else `false`
+returns: `true` if the key is down, else `false`
 
 ***
 
-### sfx(**name**)
+### key_pressed(id)
+1. id ~ int - the id of the key
+
+returns: `true` if the key was just pressed, else `false`
+
+***
+
+### key_released
+1. id ~ int - the id of the key
+
+returns: `true` if the key was just released, else `false`
+
+## Sound Functions
+
+### sfx(name)
 1. `name` ~ string - the name of the sound. The '.wav' hasn't to be added
 
 Plays a sound contained in the 'sfx' folder.
@@ -69,11 +84,31 @@ For example this will play '*test.wav*':
 sfx("test")
 ```
 
+This can also be written as sfx_play(name)
+
+returns: `nil`
+
+***
+
+### sfx_loop(name)
+1. `name` ~ string - the name of the sound.
+
+Loops the sound until sfx_stop is called.
+
+returns: `nil`
+
+***
+
+### sfx_stop(name)
+1. `name` ~ string - the name of the sound.
+
+Stops the sound.
+
 returns: `nil`
 
 ## Screen Functions
 
-### settransparent(**color**)
+### settransparent(color)
 1. `color` ~ int - the color that will be ignored
 
 Sets the color to be ignored when drawing a sprite.  
@@ -83,7 +118,7 @@ returns: `nil`
 
 ***
 
-### clear(**color**)
+### clear(color)
 1. `color` ~ int - the color that will be used to clear the screen
 
 Clears the screen.
@@ -92,7 +127,7 @@ returns: `nil`
 
 ***
 
-### pix(**x**, **y**, **color**, ~w, ~h)
+### pix(x, y, color, ~w, ~h)
 1. `x` ~ int - the x of the pixel
 2. `y` ~ int - the y of the pixel
 3. `color` ~ int - the color of the pixel
@@ -105,7 +140,7 @@ returns: `nil`
 
 ***
 
-### write(**text**, **color**, **x**, **y**)
+### write(text, color, x, y)
 1. `text` ~ string - the text to be printed
 2. `color` ~ int - the font's color
 3. `x` ~ int - indicates the left starting point
@@ -117,7 +152,7 @@ returns: `nil`
 
 ***
 
-### spr(**id**, **x**, **y**, ~scale, ~sw, ~sh)
+### spr(id, x, y, ~scale, ~sw, ~sh)
 1. `id` ~ int - the id of the sprite (a number from 0 to 255); the corresponding coordinates are x = id % 16 and y = id / 16
 2. `x` ~ int - the x draw coordinate
 3. `y` ~ int - the y draw coordinate
@@ -132,7 +167,7 @@ returns: `nil`
 
 ## Map Functions
 
-### gettile(**x**, **y**)
+### get_tile(x, y)
 1. `x` ~ int - tile's x
 2. `y` ~ int - tile's y
 
@@ -140,7 +175,7 @@ returns: *the tile's id (int)*
 
 ***
 
-### settile(**x**, **y**, **id**)
+### set_tile(x, y, id)
 1. `x` ~ int - tile's x
 2. `y` ~ int - tile's y
 3. `id` ~ int - tile's id
