@@ -37,7 +37,7 @@ Example:
 }
 ```
 
-The order of the keys gives them an **id**. In this case, [`key(0)`](Lua-Script.md#keyid) will refer to the key *W*.
+The order of the keys gives them an **id**. In this case, [`key(0)`](Lua-Script#keyid) will refer to the key *W*.
 
 ## atlas.png | (128x128 image)
 This png file is used as *sprite atlas* by the console.  

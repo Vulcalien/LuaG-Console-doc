@@ -1,7 +1,7 @@
 # LuaG Console - Lua Script - 0.5.0
 
 LuaG uses [lua](https://www.lua.org/) scripts.  
-All the script files must be put in the folder [`/console-userdata/script`](Files-and-Folders.md#console-userdata--folder) and there must be at least one file: `main.lua`.  
+All the script files must be put in the folder [`/console-userdata/script`](Files-and-Folders#console-userdata--folder) and there must be at least one file: `main.lua`.  
 In your script files, you can use a set of **variables** and **functions** of the console library.
 
 ## main.lua
@@ -51,7 +51,7 @@ returns: `nil`
 ### key(id)
 1. id ~ int - the id of the key
 
-Keys are set in [`config.json`](Files-and-Folders.md#configjson--json-file).  
+Keys are set in [`config.json`](Files-and-Folders#configjson--json-file).  
 This can be written as `key_down`
 `id` represents the index in the keys array.
 
