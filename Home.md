@@ -1,18 +1,21 @@
-# LuaG Console - Home - 0.5.0
+# LuaG Console - Home - 0.6.0
 
-## How do I install luaG Console?
-If you want to make a game using LuaG Console then you can [download a release](https://github.com/Vulcalien/LuaG-Console/wiki/Download).  
-Releases contain blank game files that you will modify.
+LuaG Console is a fantasy console that allows you to make games really quickly!
 
-## How can I make a Game?
-LuaG Console uses [Lua Language](https://www.lua.org/) for its scripts.  
-The console offers a library for things such as *rendering*, *map*, *sounds* and *key input*.  
-Read about [Lua Script](Lua-Script).  
-When developing the game, remember to run the console in [Dev Mode](Dev-Mode).
+## Game API
+It can be programmed using lua scripts and offers a game-dedicated API: there is an integrated map system, sounds, input handler and all the screen functions you need!
 
-## How can I publish my Game?
-Pack the **console** and **game files** (console-userdata) inside a *zip file* and publish it.  
-The final user will just double-click on the .jar file and the game will start.
+## Integrated Game editor
+LuaG has an integrated editor for the **map** and the **sprites** that can help the developer making his game.
 
-## I am getting confused! What files/folders should I modify?
-Read the page [Files and Folders](Files-and-Folders).
+## Easy for players
+It is easy to use for players too! They just need to download the console and the game thay want to play, put the cartridge file on the same folder of the jar file, type `run {cartridge-name}` and... it's done!
+
+## Really simple to code
+lua is a really easy language to use. If you don't know how to code in lua, there are a lot of tutorials on the Internet.
+
+## Frequent Updates (with retro-compatibility)
+LuaG is always under development adding new tools, improving the API and bug fixes. However, cartridges will keep working on future versions: retro-compatibility is one of the goals of LuaG Console!
+
+## Getting involved
+If you notice a bug, or you would like to have something made different, you can [report an issue](https://github.com/Vulcalien/LuaG-Console/issues). You will get an answer as soon as possible!
