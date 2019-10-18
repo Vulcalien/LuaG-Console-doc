@@ -19,3 +19,6 @@ LuaG is always under development adding new tools, improving the API and bug fix
 
 ## Getting involved
 If you notice a bug, or you would like to have something made different, you can [report an issue](https://github.com/Vulcalien/LuaG-Console/issues). You will get an answer as soon as possible!
+
+## Specifications
+See [this wiki page](https://github.com/Vulcalien/LuaG-Console/wiki/Specifications)!
