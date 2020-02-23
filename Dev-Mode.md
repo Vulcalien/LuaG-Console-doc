@@ -1,4 +1,4 @@
-# LuaG Console - Developer Mode - 0.6.0
+# LuaG Console - Developer Mode - 0.6.1
 
 LuaG Console works on two modes: `user` and `developer`.  
 User mode is default, so you have to switch to Developer mode using the [shell command](https://github.com/Vulcalien/LuaG-Console/wiki/Shell-and-Commands) `mode d`.
