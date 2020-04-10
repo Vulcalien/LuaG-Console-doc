@@ -1,4 +1,4 @@
-# LuaG Console - Shell and Commands - 0.6.1
+# LuaG Console - Shell and Commands - 0.6.2
 
 LuaG uses an integrated shell to make everything: run the game, open the editor, setup blank game files etc...  
 The shell works with `commands` and their `arguments`.  

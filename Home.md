@@ -1,4 +1,4 @@
-# LuaG Console - Home - 0.6.1
+# LuaG Console - Home - 0.6.2
 
 LuaG Console is a fantasy console that allows you to make games really quickly!
 

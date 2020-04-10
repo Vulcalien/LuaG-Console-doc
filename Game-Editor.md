@@ -1,4 +1,4 @@
-# LuaG Console - Game Editor - 0.6.1
+# LuaG Console - Game Editor - 0.6.2
 
 To develop a game in LuaG Console, you can use an integrated editor. It consists of a `map editor` and a `sprite editor`. To open it, you have to be in [dev mode](https://github.com/Vulcalien/LuaG-Console/wiki/Dev-Mode) and use the command `edit`.
 
