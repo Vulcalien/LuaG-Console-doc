@@ -8,13 +8,13 @@ To get a list of the commands, type `help`.
 
 | Name | Arguments | Description | Developer only |
 | --- | --- | --- | --- |
-| run | `cartridge's name` or **none** (if dev mode) | Runs a cartridge, or (if no argument) the game being developed | false |
-| edit | **none** | Opens the game editor | true |
-| pack | `cartridge's name` | Creates a cartridge | true |
-| cls | **none** | Clears the shell | false |
-| ver | **none** | Prints the console's version | false |
-| help | **none** | Prints a list of commands | false |
-| mode | `d` (developer) or `u` (user) | Switches console's mode | false |
-| files | **none** | Opens `console-userdata` in the file explorer | true |
-| setup | **none** | Creates blank game files | true |
-| exit | **none** | Shuts down the console | false |
+| run | `cartridge's name` or **none** (if dev mode) | Runs a cartridge, or (if no argument) the game being developed |
+| edit | **none** | Opens the game editor | Yes |
+| pack | `cartridge's name` | Creates a cartridge | Yes |
+| cls | **none** | Clears the shell |
+| ver | **none** | Prints the console's version |
+| help | **none** | Prints a list of commands |
+| mode | `d` (developer) or `u` (user) | Switches console's mode |
+| files | **none** | Opens `console-userdata` in the file explorer | Yes |
+| setup | **none** | Creates blank game files | Yes |
+| exit | **none** | Shuts down the console |
