@@ -1,6 +1,6 @@
-# LuaG Console - Lua Script - 0.6.2
+# LuaG Console - lua Script - 0.6.2
 
-LuaG uses [lua](https://www.lua.org/) scripts.  
+LuaG uses [*lua*](https://www.lua.org/) scripts.  
 All the scripts must be contained inside the folder `script` (inside `console-userdata`).  
 There must be at least a file: `main.lua`.
 
@@ -20,7 +20,7 @@ function tick() end
 
 This will do nothing, but the console will run it without problems.
 
-# Console Lua Library
+# lua interface
 
 ## Variables
 | Name   | Description                 |
