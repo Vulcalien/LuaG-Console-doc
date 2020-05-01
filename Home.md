@@ -3,7 +3,7 @@
 LuaG Console is a fantasy console that allows you to make games really quickly!
 
 ## Game API
-It can be programmed using *lua* scripts and offers a game-dedicated API: there is an integrated map system, sounds, input handler and all the screen functions you need!
+It can be programmed using *lua* 5.2 scripts and offers a game-dedicated API: there is an integrated map system, sounds, input handler and all the screen functions you need!
 
 ## Integrated Game editor
 LuaG has an [integrated editor](https://github.com/Vulcalien/LuaG-Console/wiki/Game-Editor) for the **map** and the **sprites** that can help the developer making his game.
