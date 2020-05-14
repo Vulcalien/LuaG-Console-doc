@@ -2,7 +2,7 @@
 
 To develop a game in LuaG Console, you can use an integrated editor. It consists of a `map editor` and a `sprite editor`. To open it, you have to be in [dev mode](https://github.com/Vulcalien/LuaG-Console/wiki/Dev-Mode) and use the command `edit`.
 
-The editor has a header with buttons used for moving from one editor to another. The first of them closes the editor and opens the shell (remember to save before doing this!).  
+The editor has a menu with buttons used for moving from one editor to another. The first of them closes the editor and opens the shell (remember to save before doing this!).  
 The button in the right saves the game files.
 
 **IMPORTANT**: switching from an editor to another will not cancel the edits, but the go-to-shell button will.

@@ -1,14 +1,14 @@
 # LuaG Console - lua Script - 0.6.2
 
 LuaG uses [*lua*](https://www.lua.org/) 5.2 scripts.  
-All the scripts must be contained inside the folder `script` (inside `console-userdata`).  
+All the scripts have to be put inside the folder `script` (inside `console-userdata`).  
 There must be at least a file: `main.lua`.
 
 ## main.lua
 This is *the main file* of the game.  
 It must contain 2 functions:
-- `init()` - should be used to initialize variables and load other script files
-- `tick()` - is called 60 times per second and should contain ticking and rendering operations
+- `init()` - called once, should be used to initialize variables and load other script files
+- `tick()` - called 60 times per second, should contain ticking and rendering operations
 
 `init()` is called before the game starts, while `tick()` is called while the game is running.
 
@@ -35,7 +35,7 @@ This will do nothing, but the console will run it without problems.
 ## Functions
 
 | Function | Description | Returns |
-| --- | --- | --- |
+| - | - | :-: |
 | loadscript(*string* script) | Loads and calls a lua script. The path is relative to `console-userdata/script` | nil |
 | key(*int* id) <br> key_down(*int* id) | Checks if a key is down | true or false |
 | key_pressed(*int* id) | Checks if a key is pressed | true or false |
@@ -48,8 +48,8 @@ This will do nothing, but the console will run it without problems.
 | pix(*int* x, *int* y, *int* color, *int* width*, *int* height*) | Sets a pixel (or a set of pixels) in the screen | nil |
 | write(*string* text, *int* color, *int* x, *int* y) | Draws a text on the screen | nil |
 | spr(*int* id, *int* x, *int* y, *int* scale*, *int* spr_width*, *int* spr_height*) | Draws a sprite on the screen. | nil |
-| get_tile(*int* x, *int* y) | Returns the id of the tile at x, y | the tile's id (int) |
-| set_tile(*int* x, *int* y, *int* id) | Modifies the tile at x, y | nil |
+| get_tile(*int* x, *int* y) | Returns the id of the tile at (x, y) | tile's id (int) |
+| set_tile(*int* x, *int* y, *int* id) | Modifies the tile at (x, y) | nil |
 | maprender(*int* scale*, *int* x_offset*, *int* y_offset*) | Renders the map | nil |
 
 *Optional parameter

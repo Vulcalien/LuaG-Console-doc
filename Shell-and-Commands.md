@@ -7,7 +7,7 @@ To get a list of the commands, type `help`.
 ## List of Commands
 
 | Name | Arguments | Description | Developer only |
-| --- | --- | --- | --- |
+| - | - | - | :-: |
 | run | `cartridge's name` or **none** (if dev mode) | Runs a cartridge, or (if no argument) the game being developed |
 | edit | **none** | Opens the game editor | Yes |
 | pack | `cartridge's name` | Creates a cartridge | Yes |
