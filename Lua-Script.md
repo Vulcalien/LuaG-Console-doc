@@ -43,23 +43,23 @@ When there is an error, it's logged in the *log file*, that can be opened using 
 
 ### Functions
 
-| Function | Description | Returns |
-| - | - | :-: |
-| loadscript(*string* script) | Loads and calls a lua script. The path is relative to `console-userdata/script` | nil |
-| log(*string* x) | Prints something in the log file | nil |
-| key(*int* id) <br> key_down(*int* id) | Checks if a key is down | true or false |
-| key_pressed(*int* id) | Checks if a key is pressed | true or false |
-| key_released(*int* id) | Checks if a key is released | true or false |
-| sfx(*string* sound_name) <br> sfx_play(*string* sound_name) | Plays a sound contained in the 'sfx' folder | nil |
-| sfx_loop(*string* sound_name) | Loops the sound until sfx_stop is called | nil |
-| sfx_stop(*string* sound_name) | Stops the sound | nil |
-| settransparent(*int* color) | Sets the color to be ignored when drawing a sprite | nil |
-| clear(*int* color) | Clears the screen | nil |
-| pix(*int* x, *int* y, *int* color, *int* width*, *int* height*) | Sets a pixel (or a set of pixels) in the screen | nil |
-| write(*string* text, *int* color, *int* x, *int* y) | Draws a text on the screen | nil |
-| spr(*int* id, *int* x, *int* y, *int* scale*, *int* spr_width*, *int* spr_height*) | Draws a sprite on the screen. | nil |
-| get_tile(*int* x, *int* y) | Returns the id of the tile at (x, y) | tile's id (int) |
-| set_tile(*int* x, *int* y, *int* id) | Modifies the tile at (x, y) | nil |
-| maprender(*int* scale*, *int* x_offset*, *int* y_offset*) | Renders the map | nil |
+| Function                                                               | Description                                                                 |     Returns     |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------------- | :-------------: |
+| loadscript(string script)                                              | Loads and calls a lua script. Path is relative to `console-userdata/script` |       nil       |
+| log(string x)                                                          | Prints something in the log file                                            |       nil       |
+| key(int id) <br> key_down(int id)                                      | Checks if a key is down                                                     |  true or false  |
+| key_pressed(int id)                                                    | Checks if a key is pressed                                                  |  true or false  |
+| key_released(int id)                                                   | Checks if a key is released                                                 |  true or false  |
+| sfx(string sound_name) <br> sfx_play(string sound_name)                | Plays a sound contained in the 'sfx' folder                                 |       nil       |
+| sfx_loop(string sound_name)                                            | Loops the sound until sfx_stop is called                                    |       nil       |
+| sfx_stop(string sound_name)                                            | Stops the sound                                                             |       nil       |
+| settransparent(int color)                                              | Sets the color to be ignored when drawing a sprite                          |       nil       |
+| clear(int color)                                                       | Clears the screen                                                           |       nil       |
+| pix(int x, int y, int color, int width*, int height*)                  | Sets a pixel (or a set of pixels) in the screen                             |       nil       |
+| write(string text, int color, int x, int y)                            | Draws a text on the screen                                                  |       nil       |
+| spr(int id, int x, int y, int scale*, int spr_width*, int spr_height*) | Draws a sprite on the screen.                                               |       nil       |
+| get_tile(int x, int y)                                                 | Returns the id of the tile at (x, y)                                        | tile's id (int) |
+| set_tile(int x, int y, int id)                                         | Modifies the tile at (x, y)                                                 |       nil       |
+| maprender(int scale*, int x_offset*, int y_offset*)                    | Renders the map                                                             |       nil       |
 
 *Optional parameter
