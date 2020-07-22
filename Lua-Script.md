@@ -55,9 +55,9 @@ When there is an error, it's logged in the *log file*, that can be opened using 
 | sfx_stop(string sound_name)                                            | Stops the sound                                                             |       nil       |
 | settransparent(int color)                                              | Sets the color to be ignored when drawing a sprite                          |       nil       |
 | clear(int color)                                                       | Clears the screen                                                           |       nil       |
-| pix(int x, int y, int color, int width*, int height*)                  | Sets a pixel (or a set of pixels) in the screen                             |       nil       |
+| pix(int x, int y, int color, int w*, int h*)                           | Sets a pixel (or a set of pixels) in the screen                             |       nil       |
 | write(string text, int color, int x, int y)                            | Draws a text on the screen                                                  |       nil       |
-| spr(int id, int x, int y, int scale*, int spr_width*, int spr_height*) | Draws a sprite on the screen.                                               |       nil       |
+| spr(int id, int x, int y, int scale*, int spr_w*, int spr_h*, int rot*, bool h_flip*, bool v_flip) | Draws a sprite on the screen. | nil |
 | get_tile(int x, int y)                                                 | Returns the id of the tile at (x, y)                                        | tile's id (int) |
 | set_tile(int x, int y, int id)                                         | Modifies the tile at (x, y)                                                 |       nil       |
 | maprender(int scale*, int x_offset*, int y_offset*)                    | Renders the map                                                             |       nil       |
