@@ -1,8 +1,7 @@
-# LuaG Console - lua Script - 0.6.2
+# LuaG Console - lua Script - 0.6.3
 
-LuaG uses [*lua*](https://www.lua.org/) 5.2 scripts.\
-All the scripts have to be put inside the folder `script` (inside `console-userdata`).\
-There must be at least a file: `main.lua`.
+LuaG uses [*lua*](https://www.lua.org/) 5.2 scripts. Those scripts have to be put inside the folder `script` (inside `console-userdata`).\
+The main file is `main.lua` but it's possible to use multiple files.
 
 ## main.lua
 This is *the main file* of the game.\
@@ -20,9 +19,18 @@ function tick() end
 
 This will do nothing, but the console will run it without problems.
 
-# lua interface
+## lua environment
+The lua interpreter **does not load** all the default libraries. Only libraries that are necessary for games are loaded.
 
-## Variables
+Loaded: Base, Package, Bit32, Math, Table, String, LuaG Interface.\
+Not Loaded: Coroutine, Io, Os, Lua-Java.
+
+Also, `require` is disabled (you can use `loadscript` instead).
+
+## Game interface
+
+### Variables
+
 | Name   | Description                 |
 | ------ | --------------------------- |
 | scr_w  | width of screen             |
@@ -32,7 +40,7 @@ This will do nothing, but the console will run it without problems.
 | map_w  | width of game map           |
 | map_h  | height of game map          |
 
-## Functions
+### Functions
 
 | Function | Description | Returns |
 | - | - | :-: |
