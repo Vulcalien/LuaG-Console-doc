@@ -23,9 +23,10 @@ This will do nothing, but the console will run it without problems.
 The lua interpreter **does not load** all the default libraries. Only libraries that are necessary for games are loaded.
 
 Loaded: Base, Package, Bit32, Math, Table, String, LuaG Interface.\
-Not Loaded: Coroutine, Io, Os, Lua-Java.
-
+Not Loaded: Coroutine, Io, Os, Lua-Java.\
 Also, `require` is disabled (you can use `loadscript` instead).
+
+When there is an error, it's logged in the *log file*, that can be opened using the `log` command when in [dev mode](https://github.com/Vulcalien/LuaG-Console/wiki/Dev-Mode).
 
 ## Game interface
 
