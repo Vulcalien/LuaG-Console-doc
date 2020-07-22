@@ -1,18 +1,18 @@
 # LuaG Console - lua Script - 0.6.2
 
-LuaG uses [*lua*](https://www.lua.org/) 5.2 scripts.  
-All the scripts have to be put inside the folder `script` (inside `console-userdata`).  
+LuaG uses [*lua*](https://www.lua.org/) 5.2 scripts.\
+All the scripts have to be put inside the folder `script` (inside `console-userdata`).\
 There must be at least a file: `main.lua`.
 
 ## main.lua
-This is *the main file* of the game.  
+This is *the main file* of the game.\
 It must contain 2 functions:
 - `init()` - called once, should be used to initialize variables and load other script files
 - `tick()` - called 60 times per second, should contain ticking and rendering operations
 
 `init()` is called before the game starts, while `tick()` is called while the game is running.
 
-The simplest LuaG program is:  
+The simplest LuaG program is:\
 ```lua
 function init() end
 function tick() end
