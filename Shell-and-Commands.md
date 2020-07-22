@@ -1,7 +1,6 @@
 # LuaG Console - Shell and Commands - 0.6.3
 
-LuaG uses an integrated shell to make everything: run the game, open the editor, setup blank game files etc...\
-The shell works with `commands` and their `arguments`.\
+LuaG uses an integrated shell to make everything: run the game, open the editor, setup blank game files etc... It works with `commands` and their `arguments`.\
 To get a list of the commands, type `help`.
 
 ## List of Commands
@@ -17,5 +16,5 @@ To get a list of the commands, type `help`.
 | help  | **none**                                     | Prints a list of commands                                      |                |
 | mode  | `d` (developer) or `u` (user)                | Switches console's mode                                        |                |
 | files | **none**                                     | Opens `console-userdata` in the file explorer                  |      Yes       |
-| log   | **none**                                     | Opens log file                                                 |      Yes       |
+| log   | **none**                                     | Opens log file in the default text editor                      |      Yes       |
 | exit  | **none**                                     | Shuts down the console                                         |                |
