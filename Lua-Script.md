@@ -46,6 +46,7 @@ When there is an error, it's logged in the *log file*, that can be opened using 
 | Function | Description | Returns |
 | - | - | :-: |
 | loadscript(*string* script) | Loads and calls a lua script. The path is relative to `console-userdata/script` | nil |
+| log(*string* x) | Prints something in the log file | nil |
 | key(*int* id) <br> key_down(*int* id) | Checks if a key is down | true or false |
 | key_pressed(*int* id) | Checks if a key is pressed | true or false |
 | key_released(*int* id) | Checks if a key is released | true or false |
