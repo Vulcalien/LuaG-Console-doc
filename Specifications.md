@@ -1,4 +1,4 @@
-# LuaG Console - Specifications - 0.6.2
+# LuaG Console - Specifications - 0.6.3
 
 | Name              |     Value      |
 | ----------------- | :------------: |
