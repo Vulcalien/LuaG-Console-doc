@@ -1,19 +1,20 @@
-# LuaG Console - Home - 0.6.2
+# LuaG Console - Home - 0.6.3
 
 LuaG Console is a fantasy console that allows you to make games really quickly!
 
 ## Game API
-It can be programmed using *lua* 5.2 scripts and offers game-dedicated utilities: there is an integrated map system, sounds, input handler and all the screen functions you need!
+The console uses *lua* 5.2 scripts. The game API allows you to easily interact with game dedicated features: map, sound, input and screen.
 
-## Integrated Game editor
-LuaG has an [integrated editor](https://github.com/Vulcalien/LuaG-Console/wiki/Game-Editor) for the **map** and the **sprites** that can help the developer make his game.\
+## Game editor
+LuaG Console offers a [game editor](https://github.com/Vulcalien/LuaG-Console/wiki/Game-Editor). It helps create the **map** and **sprites**.\
 To open it, you have to be in [dev mode](https://github.com/Vulcalien/LuaG-Console/wiki/Dev-Mode) and type `edit`.
 
-## Use as a player
-It's easy for players to play. They just need to download the console and the cartridge of the game they want to play, put the cartridge file on the same folder of the jar file, open the console, type `run {cartridge-name}` and the game will start!
+## Playing games
+It's easy to play games on LuaG Console. The player needs to download the console and the cartridge of the game, put the cartridge file on the same folder of the console (.jar) file, open the console and finally type `run {cartridge-name}`. Done!
 
 ## How to create a game
-To start coding, you first have to get blank game files. To do this, type `mode d` to switch to [dev mode](https://github.com/Vulcalien/LuaG-Console/wiki/Dev-Mode) and then type `setup`.\
+First of all, you need blank game files. Open the console and type `mode d` to switch to [developer mode](https://github.com/Vulcalien/LuaG-Console/wiki/Dev-Mode).\
+Now, type `setup`. It's time to code: read [Lua Script](https://github.com/Vulcalien/LuaG-Console/wiki/Lua-Script) to learn more.\
 *lua* is a really easy language to use. If you don't know how to code in *lua*, there are lots of tutorials on the Internet.
 
 ## Backward compatibility
